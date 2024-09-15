@@ -1,0 +1,37 @@
+/* ProfilePage.css */
+.profile-page {
+  padding: 20px;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.change-password {
+  margin-top: 20px;
+}
+
+.change-password input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.change-password button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.change-password button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

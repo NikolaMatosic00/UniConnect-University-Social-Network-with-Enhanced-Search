@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center; /* Centriranje elemenata po vertikali */
+  justify-content: space-between; /* Raspoređivanje elemenata sa razmakom između */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Povećanje maksimalne širine zbog razmaka između elemenata */
+  margin: auto;
+  margin-top: 100px; /* Adjust margin-top as needed for positioning */
+  position: relative; /* Postavljamo relativnu poziciju kako bismo mogli da postavimo apsolutnu poziciju slike */
+}
+
+.container::before {
+  content: "";
+  background-image: url("../../images/welcomePage.png"); /* Putanja do vaše poluprovidne slike */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Providnost slike (0 = potpuno providno, 1 = neprovidno) */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%; /* Širina slike sa desne strane */
+  z-index: -1; /* Postavljamo z-index na -1 da bi slika bila iza svih ostalih sadržaja u containeru */
+  border-radius: 0 8px 8px 0; /* Zaobljenost desnog gornjeg i desnog donjeg ugla */
+}
+
+h1 {
+  color: #1877f2;
+  margin-bottom: 20px;
+  text-align: left; /* Tekst na levoj strani */
+  margin-right: 20px; /* Margina desno kako bi se razdvojili od slike */
+}
+
+p {
+  color: #606770;
+  margin-bottom: 30px;
+  text-align: left; /* Tekst na levoj strani */
+  margin-right: 20px; /* Margina desno kako bi se razdvojili od slike */
+}
+
+.buttons {
+  text-align: left; /* Dugmad na levoj strani */
+}
+
+.button {
+  display: inline-block;
+  background-color: #1877f2;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin-right: 10px; /* Razmak između dugmadi */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1467c2;
+}

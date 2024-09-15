@@ -1,0 +1,41 @@
+.formica {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Uklanja dodatni padding i border od veličine */
+}
+
+textarea {
+  height: 100px; /* Podesite visinu polja za unos teksta */
+}
+
+.batoncic[type="submit"] {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.batoncic[type="submit"]:hover {
+  background-color: #1467c2;
+}
