@@ -1,23 +1,17 @@
-# SecureStay – Secure Accommodation Booking Platform
+# UniConnect – University Social Network with Enhanced Search
 
-This project was developed for the "Information Security" course at the Faculty of Technical Sciences, Novi Sad. The focus was on implementing security features in a web application for booking accommodations.
+Developed as a final project, UniConnect is a social networking platform tailored for university students, emphasizing efficient search capabilities using Elasticsearch.
 
 ## 🛠️ Technologies Used
 
-- **Backend**: Java, Spring Boot, Spring Security, JWT, JPA, MySQL
-- **Frontend**: React
-- **Security Features**:
-  - CAPTCHA verification
-  - Email verification
-  - Role-based access control
-  - JWT authentication
-  - Spring Security integration
+- **Backend**: Java, Spring Boot, JPA, MySQL, MinIO
+- **Frontend**: React, Redux
+- **Search Optimization**: Elasticsearch integration for advanced search functionalities
 
 ## 🚀 How to Run
 
 1. **Backend**:
-   - Navigate to the backend directory.
-   - Configure the `application.properties` file with your MySQL credentials.
+   - Configure `application.properties` with your database and MinIO settings.
    - Run the Spring Boot application.
 
 2. **Frontend**:
@@ -31,7 +25,7 @@ This project was developed for the "Information Security" course at the Faculty 
      npm start
      ```
 
-Access the application at `http://localhost:3000`.
+Ensure Elasticsearch and MinIO services are running before starting the application.
 
 ## 📄 License
 
